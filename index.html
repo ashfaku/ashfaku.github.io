@@ -55,43 +55,19 @@
 		{
 			console.log("hu");
                 }
-                function myFunction() 
-                {
-                        document.getElementById("myDropdown").classList.toggle("show");
-                }
-                window.onclick = function(event) 
-                {
-                        if (!event.target.matches('.dropbtn'))
-                        {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++)
-                                {
-                                       var openDropdown = dropdowns[i];
-                                       if (openDropdown.classList.contains('show')) {
-                                            openDropdown.classList.remove('show');
-                                }
-                         }
-                 }
 	</script>
 </head>
 <body>
 	<div id = "header">
                 <button>Projects</button>
-                <div class="dropdown">
-                        <button onclick="myFunction()" class = "dropbtn">Links</button>
-                        <div id = "myDropdown" class = "dropdown-content">
-                                 <a href="https://drive.google.com/folderview?id=167dJ4MY4pUveAeZOyvy9C52gTtBPWKd3">CS Google Drive</a>
-                                 <a href="#">Link 2</a>
-                                 <a href="#">Link 3</a>
-                         </div>
-                </div>
-                <button onclick = "contact()">Education</button>
+                <button>Links</button>
+               
+                <button onclick = "contact()">Education!!</button>
 		<button onclick = "contact()" id = "other">About Me</button>
 		<button onclick = "contact()" id  = "contact">Contact</button>
 	
 	</div>
-        <div>idkman</div>
+        <div>Github Account: <a href = "https://www.github.com/ashfaku">Account</a></div>
         <div>second test!</div>
         <div>test</div>
 	<div id = "side">Please go to  <a href="https://ashfaku.github.io/pokemon-website">this link</a> to see a side project I've been working on </div>
