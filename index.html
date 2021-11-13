@@ -54,12 +54,17 @@
 		{
 		}
 	</style>
-	<script></script>
+	<script>
+		function contact()
+		{
+			console.log("hi!");
+		}
+	</script>
 </head>
 <body>
 	<div id = "header">
-                <button>Education</button>
-		<button id = "other">About Me</button>
+                <button onclick = "contact()">Education</button>
+		<button onclick = "contact()" id = "other">About Me</button>
 		<button onclick = "contact()" id  = "contact">Contact</button>
 	
 	</div>
