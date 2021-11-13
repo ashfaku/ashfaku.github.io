@@ -40,9 +40,15 @@
   			display: inline-block;
   			font-size: 25px;
 		}
-                button::hover
+                .button::hover
                 {
                         background-color: white;
+                }
+                .button:active
+                {
+                        background-color: #3e8e41;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
                 }
 		#contact
 		{
@@ -53,7 +59,7 @@
 <body>
 	<div id = "header">
                 <button>Education</button>
-		<button id = "other">About Me!</button>
+		<button id = "other">About Me</button>
 		<button onclick = "contact()" id  = "contact">Contact</button>
 	
 	</div>
