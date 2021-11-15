@@ -39,33 +39,106 @@
   			text-decoration: none;
   			font-size: 25px;	
 			display: inline-block;
-  		}
+  			cursor: pointer;
+		}
                 button:hover
                 {
 			background-color: purple;
                         color: yellow;
                         border-radius: 10px;
 		}
+		#aboutme
+		{
+			color: black !important;
+			background-color: white;
+			font-family:Times New Roman;
+			font-size: 25px;
+		}
+		.dropbtn:hover, .dropbtn:focus
+		{
+			background-color: #2980B9;
+		}
+		.dropdown 
+		{
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content
+		{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			overflow: auto;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a 
+		{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.dropdown a:hover
+		{
+			background-color: #ddd;
+		}
+		.show 
+		{
+			display: block;
+		}
 	</style>
 	<script>
 		function contact()
 		{
-			console.log("hu");
+			window.open("https://ashfaku.github.io/test.html", "_self");
+	//		location.href = "http://ashfaku.github.io/test.html";
                 }
+		function dropdown() 
+		{
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event)
+		{
+  			if (!event.target.matches('.dropbtn')) 
+			{
+    				var dropdowns = document.getElementsByClassName("dropdown-content");
+    				var i;
+    				for (i = 0; i < dropdowns.length; i++) 
+				{
+					var openDropdown = dropdowns[i];
+				        if (openDropdown.classList.contains('show'))
+        					openDropdown.classList.remove('show');
+      				}
+    			}
+ 	       }
 	</script>
 </head>
 <body>
 	<div id = "header">
-                <button>Projects</button>
-                <button>Links</button>
-                <button onclick = "contact()">Education!!</button>
-		<button onclick = "contact()" id = "other">About Me</button>
+                <div class="dropdown">
+       			<button onclick="dropdown()" class="dropbtn">Accounts</button>
+        		<div id="myDropdown" class="dropdown-content">
+                		<a href="https://github.com/ashfaku">Github</a>
+                		<a href="https://www.linkedin.com/in/ashfak-uddin-898b061b2">Linkedln</a>
+        		</div>
+		</div>
+		<button>Projects</button>
+                <button>Education</button>
+		<button id = "other">About Me</button>
 		<button onclick = "contact()" id  = "contact">Contact</button>
 	
 	</div>
-        <div>Github Account: <a href = "https://www.github.com/ashfaku">Account</a></div>
-        <div>LinkedIn: <a href = "">Account</a></div>
-        <div>test</div>
+        <p id = "aboutme">
+		Hi! I'm Ashfak Uddin, an aspiring computer science freshman in college. I like to consider myself as a programmer who can build games and such.
+		I've previously worked at IT Universum LLC for some time, and have spent some of my time volunteering to help my community. 
+		Some of my hobbies are reading, coding, and sometimes drawing. I love to code some small beta games; in the Projects section of my website, 
+		I've included a beta version of Minecraft I coded in Java, using jMonkeyEngine. 
+	</p>
+        <span id = "aboutme">This site hosts my portfolio, contact, and other things.</span>
 	<div id = "side">Please go to  <a href="https://ashfaku.github.io/pokemon-website">this link</a> to see a side project I've been working on </div>
 </body>
 </html>
