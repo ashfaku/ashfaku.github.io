@@ -58,9 +58,9 @@
 		
 	</style>
 	<script>
-		function contact()
+		function contact(link)
 		{
-			window.open("https://ashfaku.github.io/test.html", "_self");
+			window.open(link, "_self");
                 }
 		function dropdown() 
 		{
@@ -95,8 +95,7 @@
 		</div>
 		<button>Projects</button>
                 <button>Education</button>
-		<button id = "other">About Me</button>
-		<button onclick = "contact()" id  = "contact">Contact</button>
+		<button onclick = "contact('https://ashfaku.github.io/test.html')" id  = "contact">Contact</button>
 	
 	</div>
         <p id = "aboutme">
