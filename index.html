@@ -51,11 +51,20 @@
 		#aboutme
 		{
 			color: black !important;
-			background-color: white;
+		/*	background-color: white;*/
 			font-family:Times New Roman;
 			font-size: 25px;
 		}
-		
+		#aboutMe
+		{
+			background-image: url('coolBackground.png');
+			background-size: cover;
+  			border: 2px solid;
+                        width: 100%;
+                        margin: 0; 
+                        padding: 0; 
+                        text-align: right;
+		}
 	</style>
 	<script>
 		function contact(link)
@@ -98,13 +107,15 @@
 		<button onclick = "contact('https://ashfaku.github.io/test.html')" id  = "contact">Contact</button>
 	
 	</div>
-        <p id = "aboutme">
-		Hi! I'm Ashfak Uddin, an aspiring computer science freshman in college. I like to consider myself as a programmer who can build games and such.
-		I've previously worked at IT Universum LLC for some time, and have spent some of my time volunteering to help my community. 
-		Some of my hobbies are reading, coding, and sometimes drawing. I love to code some small beta games; in the Projects section of my website, 
-		I've included a beta version of Minecraft I coded in Java, using jMonkeyEngine. 
-	</p>
-        <span id = "aboutme">This site hosts my portfolio, contact, and other things.</span>
+	<div id = "aboutMe">
+        	<p id = "aboutme">
+			Hi! I'm Ashfak Uddin, an aspiring computer science freshman in college. I like to consider myself as a programmer who can build games and such.
+			I've previously worked at IT Universum LLC for some time, and have spent some of my time volunteering to help my community. 
+			Some of my hobbies are reading, coding, and sometimes drawing. I love to code some small beta games; in the Projects section of my website, 
+			I've included a beta version of Minecraft I coded in Java, using jMonkeyEngine. Feel free to peruse my website!
+		</p>
+	</div>
+	<span id = "aboutme">This site hosts my portfolio, contact, and other things.</span>
 	<div id = "side">Please go to  <a href="https://ashfaku.github.io/pokemon-website">this link</a> to see a side project I've been working on</div>
 </body>
 </html>
