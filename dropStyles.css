@@ -30,6 +30,7 @@
 .dropdown a:hover
 {
         background-color: #ddd;
+        border-style: outset;
 }
 .show
 {
