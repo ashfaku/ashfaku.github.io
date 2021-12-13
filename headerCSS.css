@@ -6,6 +6,7 @@ html
         -o-background-size: cover;
         background-size: cover;
         height: 100%;
+	width: 100%;
         overflow: hidden;
 }
 #side
@@ -36,7 +37,8 @@ button
         font-size: 25px;
         display: inline-block;
         cursor: pointer;
-        border-radius: 20px;
+	box-shadow: .1em .1em 8px black;
+        border-radius: 20000px;
 }
 
 button:hover
