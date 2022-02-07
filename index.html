@@ -19,6 +19,29 @@
                        -o-animation-fill-mode: forwards; 
                        animation-fill-mode: forwards;
                 }
+		button:hover
+		{
+			animation: rot 1s linear infinite;
+                       -webkit-animation-fill-mode: forwards;
+                       -moz-animation-fill-mode: forwards;
+                       -ms-animation-fill-mode: forwards;
+                       -o-animation-fill-mode: forwards;
+                       animation-fill-mode: forwards;
+		}
+		@keyframes yur
+		{
+		       0%
+                       {
+                               transform: rotate(0deg);
+                               transform: rotateY(0deg);
+                       }
+                       100%
+                       {
+                               transform: rotate(360deg);
+                               transform: rotateY(360deg);
+                       }
+
+		}
                 @keyframes rot
                 {
                        0%
@@ -67,7 +90,7 @@
 			<span class = "line">my </span>
 			<span class = "line">website!</span>
                 <div class="dropdown">
-       			<button onclick="dropdown()" class="dropbtn">Accounts</button>
+       			<button onclick="dropdown()" class="dropbtn"><span id = "yurmom">Accounts</span></button>
         		<div id="myDropdown" class="dropdown-content">
                 		<a href="https://github.com/ashfaku" target = "_blank" style = "text-align: center;"><i class="fab fa-github" style="font-size: 1.5em; border-radius: 50%;"></i></a>
                 		<a href="https://www.linkedin.com/in/ashfak-uddin-898b061b2" target = "_blank" style = "text-align: center;"><i class="fab fa-linkedin" style = "border-radius: 50%; font-size: 1.5em; color: #0077b5;"></i></a>
