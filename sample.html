@@ -3,13 +3,13 @@
 <head>
 	<title>Ashfak's Personal Website</title>
 	<style>
-        	#name
+        	.name
 		{
 			color: red;
 			font-size: 2em;
 			padding: 0px 0px 0px 3px;
 		}
-		#date
+		.date
 		{
 			font-size: 1em;
 			font-family: "Times New Roman";
@@ -20,12 +20,12 @@
 		{
 			padding: 0px 0px 3px 0px;
 		}
-		#message
+		.message
 		{
 			background-color: grey;
 			max-width: 25em;
 		}
-		#message:hover
+		.message:hover
 		{
 			background-color: #353839;
 		}
@@ -33,7 +33,7 @@
 		{
 			background-color: grey;
 		}
-		#text
+		.text
 		{
 			font-size: 1.5em;
 			color: white;
@@ -44,11 +44,17 @@
 	<script></script>
 </head>
 <body>
-	<div id = "message">
+	<div class = "message">
 		<div class = "header">
-			<span id = "name">Ashfak</span><span id = "date">Today at 10:03 AM</span>
+			<span class = "name">Ashfak</span><span class = "date">Today at 10:03 AM</span>
 		</div>
-		<div id = "text">Sample Message</div>
+		<div class = "text">Sample Message</div>
+	</div>
+        <div class= "message">
+		<div class = "header">
+			<span class = "name">Victor</span><span class = "date">Today at 10:03 AM</span>
+		</div>
+		<div class = "text">Sample Message 2</div>
 	</div>
 </body>
 </html>
