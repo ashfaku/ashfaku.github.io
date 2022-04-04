@@ -8,16 +8,17 @@
 	<style>
         	.name
 		{
-			color: red;
+			color: white;
 			font-size: 2em;
                         font-family: "Roboto", sans-serif;
 			padding: 0px 0px 0px 3px;
+			font-weight: bold;
 		}
 		.date
 		{
 			font-size: 1em;
 			font-family: "Roboto", sans-serif;
-			color: #D3D3D3;
+			color: #d4c6c5;
 			padding: 0px 0px 0px 5px;
 		}
 		.header
@@ -26,6 +27,7 @@
 		}
 		.message
 		{
+			font-family: "Roboto", sans-serif;
 			background-color: grey;
 			max-width: 25em;
 		}
@@ -45,7 +47,36 @@
 
 		}
 	</style>
-	<script></script>
+	<script>
+		// keep this function for later when i start coloring names and shit
+		function color()
+		{
+			var names = document.getElementsByClassName("name");
+			for (let i = 0; i < names.length; i++)
+			{
+				var element = names[i];
+				element.style.color = "blue";
+				switch (element.innerHTML)
+				{
+					case 'Victor':
+						element.style.color = "orange";
+						break;
+					case 'Ashfak':
+						element.style.color = "red";
+						break;
+					case 'Tofu':
+						element.style.color = "blue";
+						break;
+					case 'Zhipeng':
+						element.style.color = "green";
+						break;
+					default:
+						element.style.color = "white";
+						break;
+				}
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class = "message">
@@ -60,6 +91,20 @@
 		</div>
 		<div class = "text">Sample Message 2</div>
 	</div>
+	<div class= "message">
+                <div class = "header">
+                        <span class = "name">Tofu</span><span class = "date">Today at 10:03 AM</span>
+                </div>
+                <div class = "text">Sample Message 2</div>
+        </div>
+	<div class= "message">
+                <div class = "header">
+                        <span class = "name">Zhipeng</span><span class = "date">Today at 10:03 AM</span>
+                </div>
+                <div class = "text">Sample Message 2</div>
+        </div>
+
+	<button onclick = "color();">Change</button>
 </body>
 </html>
 	
