@@ -1,110 +1,55 @@
 <!DOCTYPE HTML>
 <html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <head>
 	<title>Ashfak's Personal Website</title>
 	<style>
-        	.name
+		#login
 		{
-			color: white;
-			font-size: 2em;
-                        font-family: "Roboto", sans-serif;
-			padding: 0px 0px 0px 3px;
-			font-weight: bold;
 		}
-		.date
+        	#username, #password
 		{
-			font-size: 1em;
-			font-family: "Roboto", sans-serif;
-			color: #d4c6c5;
-			padding: 0px 0px 0px 5px;
+			margin: auto;
+			width: 20%;
+			height: 5em;
+			position: relative;	
+			border: 0px solid #73AD21;
+			background-color: black;
 		}
-		.header
+		input
 		{
-			padding: 0px 0px 3px 0px;
+			position: absolute;
+			left: 4%;
+			right: 4%;
+			width: 90%;
+			height: 75%;
 		}
-		.message
+		#u
 		{
-			font-family: "Roboto", sans-serif;
-			background-color: grey;
-			max-width: 25em;
+			border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+			bottom: 0;
 		}
-		.message:hover
+		#p
 		{
-			background-color: #353839;
-		}
-		body
-		{
-			background-color: grey;
-		}
-		.text
-		{
-			font-size: 1.5em;
-			color: white;
-			padding: 0px 0px 0px 3px;
-
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
 		}
 	</style>
 	<script>
-		// keep this function for later when i start coloring names and shit
-		function color()
-		{
-			var names = document.getElementsByClassName("name");
-			for (let i = 0; i < names.length; i++)
-			{
-				var element = names[i];
-				element.style.color = "blue";
-				switch (element.innerHTML)
-				{
-					case 'Victor':
-						element.style.color = "orange";
-						break;
-					case 'Ashfak':
-						element.style.color = "red";
-						break;
-					case 'Tiffanie':
-						element.style.color = "blue";
-						break;
-					case 'Zhipeng':
-						element.style.color = "green";
-						break;
-					default:
-						element.style.color = "white";
-						break;
-				}
-			}
-		}
 	</script>
 </head>
 <body>
-	<div class = "message">
-		<div class = "header">
-			<span class = "name">Ashfak</span><span class = "date">Today at 10:03 AM</span>
+	<div id = "login">
+		<div id = "username">
+			<input type = "text" id = "u"></input>
+		</div>	
+		<div id = "password">
+			<input type = "text" id = "p"></input>	
 		</div>
-		<div class = "text">Sample Message</div>
-	</div>
-        <div class= "message">
-		<div class = "header">
-			<span class = "name">Victor</span><span class = "date">Today at 10:03 AM</span>
+		<div>
+			<button onclick = "color();">Change</button>
 		</div>
-		<div class = "text">Sample Message 2</div>
 	</div>
-	<div class= "message">
-                <div class = "header">
-                        <span class = "name">Tiffanie</span><span class = "date">Today at 10:03 AM</span>
-                </div>
-                <div class = "text">Sample Message 2</div>
-        </div>
-	<div class= "message">
-                <div class = "header">
-                        <span class = "name">Zhipeng</span><span class = "date">Today at 10:03 AM</span>
-                </div>
-                <div class = "text">Sample Message 2</div>
-        </div>
-
-	<button onclick = "color();">Change</button>
 </body>
 </html>
 	
